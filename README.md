@@ -2,6 +2,18 @@
 
 * The app was built with Spring boot and Kotlin. The feature of the app is exposed through a JSON REST API
 
+# Optimisation model
+The problem can be represented by a minimisation problem. Input parameters are:
+
+Cs = Capacity of senior staff
+Cj = Capacity of junior staff
+R = number of rooms to clean
+Ns = Number of senior staff
+Nj = Number of junior staff
+In an inequality of the form R <= (Ns * Cs) + (Nj * Cj), with the conditions that all parameters are non-negative integers, and Ns > 0, Nj >= 0. We want to minimise the values of Ns and Nj.
+
+We could solve the problem using a linear solver like GLPK or JOptimizer but for this task it was more appropriate to solve it manually.The optimisation is implemented in Java in the linearOptimizer class. 
+
 #Build
  * Run `mvn package` from the root directory
  * Run `java -jar target/cleaning-optimization-0.0.1-SNAPSHOT.jar`
