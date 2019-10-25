@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: spo.challenge.cleaningoptimization.service.LinearOptimiserTest
--------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 s - in spo.challenge.cleaningoptimization.service.LinearOptimiserTest
